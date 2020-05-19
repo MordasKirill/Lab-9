@@ -4,7 +4,7 @@
 <%-- Кнопка нового объявления показывается только если пользователь
 аутентифицирован (authUser!=null) --%>
 <c:if test="${sessionScope.authUser!=null}">
-    <div style="background-color: #ccc; border: 1px solid black; float:
+    <div style="background-color: #cccccc; border: 1px solid #000000; float:
     right; margin: 10px; margin-top: 20px; padding: 5px 0px; text-align: center;
     width: 150px; ">
     <a href="<c:url value="/updateAd.jsp" />">Создать</a>
