@@ -6,6 +6,37 @@
 <head>
     <title>Регистрация нового пользователя</title>
     <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+    <style>
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+    <style>
+        .button24 {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: .5em 2em;
+            outline: none;
+            border-width: 2px 0;
+            border-style: solid none;
+            border-color: #FDBE33 #000 #D77206;
+            border-radius: 6px;
+            background: linear-gradient(#F3AE0F, #E38916) #E38916;
+            transition: 0.2s;
+        }
+        .button24:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+        .button24:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+    </style>
 </head>
 <body>
 <jsp:include page="/static/header.jsp"></jsp:include>
@@ -37,12 +68,13 @@ margin-left: 80px;background: chocolate">
             <tr>
                 <td></td>
                 <td><button>
-                    <img src="resources/unnamed.jpg" alt="" style="vertical-align:middle">
+                    <img src="resources/Loading.gif" alt="" style="vertical-align:middle">
                     Зарегистрироваться
 
                     </button>
+
                     <input
-                        type="button" value="Отменить"
+                        type="button" class="button24" value="Отменить"
                         onclick="window.location='<c:url value="/index.jsp"/>';"></td>
 
             </tr>
